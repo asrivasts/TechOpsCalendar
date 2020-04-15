@@ -14,7 +14,7 @@ var Calendar = function(model, options, date){
     DateTimeShow: true,
     DateTimeFormat: 'mmm, yyyy',
     DatetimeLocation: '',
-    EventClick: '',
+    EventClick: false,
     EventTargetWholeDay: false,
     DisabledDays: [],
     ModelChange: model
@@ -211,7 +211,9 @@ function createCalendar(calendar, element, adjuster){
           number.className += " eventday";
           var title = document.createElement('span');
           title.className += "cld-title";
-          if(typeof calendar.Model[n].Link == 'function' || calendar.Options.EventClick){
+          // if(typeof calendar.Model[n].Link == 'function' || calendar.Options.EventClick){
+          if(calendar.Options.EventClick){
+            console.log("Anu: ", calendar.Model[n].Link, " || ", calendar.Options.EventClick)
             var a = document.createElement('a');
             a.setAttribute('href', '#');
             a.innerHTML += calendar.Model[n].Title;
@@ -239,7 +241,8 @@ function createCalendar(calendar, element, adjuster){
             }
             title.appendChild(a);
           }else{
-            title.innerHTML += '<a href="' + calendar.Model[n].Link + '">' + calendar.Model[n].Title + '</a>';
+            // title.innerHTML += '<a href="' + calendar.Model[n].Link + '">' + calendar.Model[n].Title + '</a>';
+            title.innerHTML += `<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="" data-original-title="${calendar.Model[n].Title}">` + calendar.Model[n].Title + '</button>';
           }
           number.appendChild(title);
         }
