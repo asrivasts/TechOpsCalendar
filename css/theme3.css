@@ -33,9 +33,11 @@
   }
   .cld-rwd{
     float: left;
+    padding-top: 10px;
   }
   .cld-fwd{
     float: right;
+    padding-top: 10px;
   }
     .cld-nav svg:hover{
 

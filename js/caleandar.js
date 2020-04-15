@@ -135,7 +135,7 @@ function createCalendar(calendar, element, adjuster){
         datetime.appendChild(rwd);
       }
       var today = document.createElement('div');
-      today.className += ' today';
+      today.className += ' today h1';
       today.innerHTML = months[calendar.Selected.Month] + ", " + calendar.Selected.Year;
       datetime.appendChild(today);
       if(calendar.Options.NavShow && !calendar.Options.NavVertical){
