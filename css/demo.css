@@ -11,3 +11,11 @@ span, p, svg{
 	font: inherit;
 	vertical-align: baseline;
 }
+.btnLink
+{
+  border-color: #7B00FF;
+}.btnLink:hover
+{
+  background-color: #7B00FF;
+  color:#fff
+}

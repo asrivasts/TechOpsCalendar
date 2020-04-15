@@ -242,7 +242,13 @@ function createCalendar(calendar, element, adjuster){
             title.appendChild(a);
           }else{
             // title.innerHTML += '<a href="' + calendar.Model[n].Link + '">' + calendar.Model[n].Title + '</a>';
-            title.innerHTML += `<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="" data-original-title="${calendar.Model[n].Title}">` + calendar.Model[n].Title + '</button>';
+            if (calendar.Model[n].Link){
+              title.innerHTML += '<a href="' + calendar.Model[n].Link + '"><button type="button" class="btn btn-secondary btnLink">' + calendar.Model[n].Title + '</button></a>'
+            }
+            else{
+              title.innerHTML += `<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="" data-original-title="${calendar.Model[n].Title}">` + calendar.Model[n].Title + '</button>';
+          
+            }
           }
           number.appendChild(title);
         }
