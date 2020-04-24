@@ -6,7 +6,7 @@ var events = [
   {'Date': new Date(2020, 3, 30), 'Title': "Dell PowerOne - Dell's New Converged Platform: 11AM - 12PM"},
   {'Date': new Date(2020, 4, 7), 'Title': 'SD-WAN Edge Powered by VeloCloud: 11AM - 12PM', 'Link' : 'https://www.delltechnologies.com/en-us/video-collateral/sd-wan-edge-powered-by-velocloud.htm'},
   {'Date': new Date(2020, 4, 14), 'Title': 'Data Protection and Resilliency: 11AM - 1PM'},
-  {'Date': new Date(2020, 4, 21), 'Title': 'Boomi - SaaS Integration Platform: 11AM - 12PM'},
+  {'Date': new Date(2020, 4, 21), 'Title': 'Boomi - Cloud Integration Platform: 11AM - 12PM'},
   {'Date': new Date(2020, 4, 28), 'Title': 'Unstructured Data Briefing: 11AM - 12PM'}
 ];
 var settings = {};
