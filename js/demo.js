@@ -8,7 +8,7 @@ var events = [
   {'Date': new Date(2020, 4, 14), 'Title': 'Data Protection and Resilliency: 11AM - 1PM'},
   {'Date': new Date(2020, 4, 21), 'Title': 'Monthly Business Review: 11AM - 12PM'},
   {'Date': new Date(2020, 4, 28), 'Title': 'Unstructured Data Briefing: 11AM - 12PM'},
-  {'Date': new Date(2020, 5, 03), 'Title': 'Review of Edu Sessions (POC?): 11AM - 12PM'},
+  {'Date': new Date(2020, 5, 04), 'Title': 'Review of Edu Sessions (POC?): 11AM - 12PM'},
   {'Date': new Date(2020, 5, 18), 'Title': 'Microsoft Services: 11AM - 12PM'}
 ];
 var settings = {};
